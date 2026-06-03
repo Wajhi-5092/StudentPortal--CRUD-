@@ -34,7 +34,7 @@ namespace StudentPortal.web.Controllers
             await dbcontext.SaveChangesAsync();
 
             // Use TempData to show a one-time success alert after redirect
-            TempData["Success"] = "Student saved successfully.";
+            TempData["Success"] = "Student saved successfully in Database.";
 
             // Redirect to GET Add to avoid form resubmission and display the alert
             return RedirectToAction("Add");
